@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <title>React App</title>
+  </head>
+
+  <body>
+    <div class="chart">
+
+    </div>
+    <script>
+    var data = [4, 8, 15, 16, 23, 42];
+d3
+  .select(".chart")
+  .selectAll("div")
+  .data(data)
+  .enter()
+  .append("div")
+  .style("width", d => d * 10 + "px")
+  .text(d => d);
+</script>
+    <div id="root"></div>
+  </body>
+</html>
